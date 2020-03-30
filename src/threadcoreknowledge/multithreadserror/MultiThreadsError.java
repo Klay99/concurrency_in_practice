@@ -28,8 +28,8 @@ public class MultiThreadsError implements Runnable {
 
     // 参数中的2表示，需要等待2个线程，只有当2个线程都到达指定位置后
     // （运行完cyclicBarrier.wait()），才能放行，进行下一步操作
-    private static volatile CyclicBarrier cyclicBarrier1 = new CyclicBarrier(3);
-    private static volatile CyclicBarrier cyclicBarrier2 = new CyclicBarrier(3);
+    private static volatile CyclicBarrier cyclicBarrier1 = new CyclicBarrier(2);
+    private static volatile CyclicBarrier cyclicBarrier2 = new CyclicBarrier(2);
 
     // 用于存储count++过程中是否出错，为true时，代表已经被修改过了
     private final boolean[] marked = new boolean[10000000];
@@ -75,15 +75,7 @@ public class MultiThreadsError implements Runnable {
                 // ①正常执行时（+2次），marked[count]和marked[count-2]都为true（先进来的线程修改为了true）
                 // ①出错少加时（+1次），marked[count]和marked[count-1]都为true
                 // 特殊情况：当count==1时（少加了），理应是满足条件，所以marked[0]应该设为true才能判断出错了
-                int num = count - pre;
-                boolean isWrong = false;
-                if (num == 1) {
-                    isWrong = marked[count] && marked[count-1];
-                }
-                if (num == 2) {
-                    isWrong = isWrong || marked[count] && marked[count-2] || marked[count-1] && marked[count-2];
-                }
-                if (isWrong) {
+                if (marked[count] && marked[count-1]) {
                     System.out.println("发生了错误（少加），加前：" + pre + "\t\t加后：" + count);
                     wrongCount.incrementAndGet(); // 统计count++出错的次数
                 }
@@ -95,13 +87,10 @@ public class MultiThreadsError implements Runnable {
     public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new Thread(instance);
         Thread thread2 = new Thread(instance);
-        Thread thread3 = new Thread(instance);
         thread1.start();
         thread2.start();
-        thread3.start();
         thread1.join();
         thread2.join();
-        thread3.join();
         System.out.println("最后的结果为：" + count);
         System.out.println("真正运行的次数：" + realCount.get());
         System.out.println("错误的计算次数：" + wrongCount.get());

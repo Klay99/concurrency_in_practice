@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="08c25cf7-7969-40b9-a713-28c9f37e6f09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/concurrency_in_practice/threadcoreknowledge/multithreadserror/MultiThreadsError.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/concurrency_in_practice/threadcoreknowledge/multithreadserror/MultiThreadsError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/threadcoreknowledge/multithreadserror/MultiThreadsError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/threadcoreknowledge/multithreadserror/MultiThreadsError.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/multithreadserror/MultiThreadsError.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-249">
+              <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -66,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/threadcoreknowledge/threadobjectclasscommonmethods/TwoThreadsPrintOddAndEven.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/threadobjectclasscommonmethods/TwoThreadsPrintOddAndEven2.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/threadobjectclasscommonmethods/TwoThreadsPrintOddAndEvenSyn.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/threadobjectclasscommonmethods/TwoThreadsPrintOddAndEvenWaitNotify.java" />
@@ -117,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/jmm/singleton/Singleton7.java" />
         <option value="$PROJECT_DIR$/src/jmm/singleton/Singleton8.java" />
         <option value="$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java" />
+        <option value="$PROJECT_DIR$/src/threadcoreknowledge/multithreadserror/MultiThreadsError.java" />
       </list>
     </option>
   </component>
@@ -168,7 +179,7 @@
               <item name="concurrency_in_practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="createthreads" type="462c0819:PsiDirectoryNode" />
+              <item name="multithreadserror" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,13 +228,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NoVolatile2">
+  <component name="RunManager" selected="Application.MultiThreadsError">
     <configuration name="FieldVisibility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jmm.FieldVisibility" />
       <module name="concurrency_in_practice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="jmm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiThreadsError" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadcoreknowledge.multithreadserror.MultiThreadsError" />
+      <module name="concurrency_in_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="threadcoreknowledge.multithreadserror.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,19 +281,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jmm.Teat" />
-      <module name="concurrency_in_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jmm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UseVolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jmm.UseVolatile" />
       <module name="concurrency_in_practice" />
@@ -285,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MultiThreadsError" />
         <item itemvalue="Application.NoVolatile2" />
         <item itemvalue="Application.UseVolatile" />
         <item itemvalue="Application.NoVolatile" />
         <item itemvalue="Application.FieldVisibility" />
-        <item itemvalue="Application.Teat" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +334,7 @@
       <workItem from="1585461415542" duration="170000" />
       <workItem from="1585461609099" duration="4397000" />
       <workItem from="1585530427720" duration="14175000" />
-      <workItem from="1585573680927" duration="467000" />
+      <workItem from="1585573680927" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585573899978</created>
@@ -332,17 +343,24 @@
       <option name="project" value="LOCAL" />
       <updated>1585573899978</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First commit">
+      <created>1585574320053</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585574320053</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154062000" />
+    <option name="totallyTimeSpent" value="154398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49305555" visible="true" weight="0.26407507" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49305555" visible="true" weight="0.26407507" />
       <window_info id="Structure" order="1" sideWeight="0.50931674" side_tool="true" weight="0.26675603" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -351,7 +369,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5069444" side_tool="true" weight="0.24396783" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31444758" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31444758" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.33286119" />
@@ -394,13 +412,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/startthread/CantStartTwice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/startthread/StartAndRunMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -768,7 +779,7 @@
     <entry file="file://$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -776,6 +787,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threadcoreknowledge/multithreadserror/MultiThreadsError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
         </state>
       </provider>
     </entry>
