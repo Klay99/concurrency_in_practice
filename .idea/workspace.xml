@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08c25cf7-7969-40b9-a713-28c9f37e6f09" name="Default Changelist" comment="" />
+    <list default="true" id="08c25cf7-7969-40b9-a713-28c9f37e6f09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="200">
+              <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -30,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/jmm/singleton/Singleton6.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -57,6 +59,9 @@
       <find>b = 1, a = 3</find>
       <find>b = 3, a = 1</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -97,7 +102,6 @@
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/createthreads/wrongways/ThreadPool.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/startthread/StartAndRunMethod.java" />
         <option value="$PROJECT_DIR$/src/threadcoreknowledge/threadobjectclasscommonmethods/JoinPrinciple.java" />
-        <option value="$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java" />
         <option value="$PROJECT_DIR$/src/jmm/Teat.java" />
         <option value="$PROJECT_DIR$/src/jmm/FieldVisibility.java" />
         <option value="$PROJECT_DIR$/src/jmm/NoVolatile.java" />
@@ -112,6 +116,14 @@
         <option value="$PROJECT_DIR$/src/jmm/singleton/Singleton1.java" />
         <option value="$PROJECT_DIR$/src/jmm/singleton/Singleton7.java" />
         <option value="$PROJECT_DIR$/src/jmm/singleton/Singleton8.java" />
+        <option value="$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -120,6 +132,7 @@
     <option name="width" value="1260" />
     <option name="height" value="880" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="false" />
@@ -148,21 +161,21 @@
               <item name="concurrency_in_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="concurrency_in_practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jmm" type="462c0819:PsiDirectoryNode" />
-              <item name="singleton" type="462c0819:PsiDirectoryNode" />
+              <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="concurrency_in_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="concurrency_in_practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="threadcoreknowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="createthreads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,7 +191,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -310,17 +323,26 @@
       <workItem from="1585461415542" duration="170000" />
       <workItem from="1585461609099" duration="4397000" />
       <workItem from="1585530427720" duration="14175000" />
+      <workItem from="1585573680927" duration="467000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1585573899978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585573899978</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153503000" />
+    <option name="totallyTimeSpent" value="154062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49305555" visible="true" weight="0.26072386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49305555" visible="true" weight="0.26407507" />
       <window_info id="Structure" order="1" sideWeight="0.50931674" side_tool="true" weight="0.26675603" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -354,6 +376,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,17 +765,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jmm/singleton/Singleton6.java">
+    <entry file="file://$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="200">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jmm/OutOfOrderExecution.java">
+    <entry file="file://$PROJECT_DIR$/src/jmm/singleton/Singleton6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        <state relative-caret-position="525">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
